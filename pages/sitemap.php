@@ -1,14 +1,14 @@
 <?php
 namespace TymFrontiers;
 use \Michelf\Markdown;
-require_once "app.init.php";
+require_once "../app.init.php";
 require_once APP_BASE_INC;
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr" manifest="./site.manifest">
   <head>
     <meta charset="utf-8">
-    <title>About us | <?php echo PRJ_TITLE; ?></title>
+    <title>Site map - Webnize Biz<?php //echo PRJ_TITLE; ?></title>
     <?php include PRJ_INC_ICONSET; ?>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
     <meta name="keywords" content="<?php echo PRJ_KEYWORDS; ?>">
@@ -33,9 +33,9 @@ require_once APP_BASE_INC;
       <div class="view-space">
         <div class="sec-div padding -p10">
           <?php
-          if (\file_exists(PRJ_ROOT . "/src/prj-about.md") && $about_info = \file_get_contents(PRJ_ROOT . "/src/prj-about.md")) {
-            $about_info = Markdown::defaultTransform($about_info);
-            echo $about_info;
+          if (\file_exists(PRJ_ROOT . "/src/prj-about-sitemap.md") && $site_map = \file_get_contents(PRJ_ROOT . "/src/prj-about-sitemap.md")) {
+            $site_map = Markdown::defaultTransform($site_map);
+            echo $site_map;
           }
            ?>
         </div>

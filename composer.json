@@ -1,8 +1,8 @@
 {
-    "name": "7os/web-app-about",
+    "name": "7os/about-soswapp",
     "description": "7 OS Web - Project info template",
     "keywords": ["php", "javascript","7","seven","os","web","about","us"],
-    "homepage": "https://github.com/7os/web-app-about",
+    "homepage": "https://github.com/7os/about-soswapp",
     "type": "library",
     "license": "MIT",
     "authors": [
